@@ -35,6 +35,6 @@ class TodolistsController < ApplicationController
   private #アクション以外はprivate以下に記述を行う
   #ストロングパラメータ
   def list_params#モデル名_params
-    params.require(:list).permit(:title,:body)
+    params.require(:list).permit(:title,:body,:image)
   end
 end
